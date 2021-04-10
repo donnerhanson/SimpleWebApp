@@ -54,7 +54,14 @@ The Simple Web Application uses the following smaller model from the Spring MVC 
 [Simple_Web_App_model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290686/Simple_Web_App_model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)
 
 
-The Client Sends a request to the Front Controller, otherwise known as the Dispatcher Serverlet.
+The Client Sends a request to the Front Controller, otherwise known as the Dispatcher Serverlet.  
+The Controller determines how and where to get the Model, then returns the Model to the View.  
+The Model that is returned does not have business logic in it. It is just a POJO (Plain Old Java Object).   
+
+The View component renders the View for the Client.  
+
+This ensures separation of operations to ensure easier Implementation and Maintenence during the SDLC.   
+
  <!-- GETTING STARTED -->
  ## Getting Started
 
