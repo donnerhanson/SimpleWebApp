@@ -48,10 +48,10 @@ The program is an exercise and demonstration of the Spring MVC architecural patt
 The general Model View Controller pattern is found at [MVC at Tutorialspoint.com](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)  
 
 The Spring MVC Architecture uses the following model:
-[Spring_MVC_Arch_Model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290677/Spring_MVC_Arch_Model.pdf) - model from https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content
+[Spring_MVC_Arch_Model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290677/Spring_MVC_Arch_Model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)
 
 The Simple Web Application uses the following smaller model from the Spring MVC model:  
-[Simple_Web_App_model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290686/Simple_Web_App_model.pdf) - model from https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content
+[Simple_Web_App_model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290686/Simple_Web_App_model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)
 
 
 The Client Sends a request to the Front Controller, otherwise known as the Dispatcher Serverlet.
