@@ -42,27 +42,28 @@
  <!-- ABOUT THE PROGRAM -->
  ## About The Program
 
-This program is a simple web page (in progress) built using Spring Framework following the Udemy course ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
-
-The program is an exercise and demonstration of the Spring MVC architecural pattern.  
-The general Model View Controller pattern is found at [MVC at Tutorialspoint.com](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)  
+This program is a simple web page built using Spring Framework following the Udemy course ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).  
+  
+The program is an exercise and demonstration of the Spring MVC architecural pattern. The general Model View Controller pattern is found at [Tutorialspoint](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)  
 
 The Spring MVC Architecture uses the following model:
-[Spring_MVC_Arch_Model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290677/Spring_MVC_Arch_Model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)
-1. Client Sends an HTTP request.
-2. Dispatcher Serverlet Sends request to Controller
-3. Controller interfaces with the Services
-4. Services performs actions on data from the requested location
-5. Service returns model to controller and returns model to the Dispatcher Servelet
-6. Serverlet sends the model to the View component
-7. View component renders the HTML (in this project thymeleaf is used).
-
+[Spring MVC Architectural Model](https://github.com/donnerhanson/SimpleWebApp/files/6290677/Spring_MVC_Arch_Model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)  
+  
+1. Client Sends an HTTP request.  
+2. Dispatcher Serverlet Sends request to Controller  
+3. Controller interfaces with the Services  
+4. Services performs actions on data from the requested location  
+5. Service returns model to controller and returns model to the Dispatcher Servelet  
+6. Serverlet sends the model to the View component  
+7. View component renders the HTML (in this project thymeleaf is used).  
+  
 This ensures separation of operations to ensure easier Implementation and Maintenence during the SDLC.   
 
  <!-- GETTING STARTED -->
  ## Getting Started
 
  To get a local copy up and running follow these simple steps.
+ Clone the repo. Open the project in an IDE. May have to explicitly run the Maven file pom.xml to integrate the dependencies into the project.  
 
  ### Prerequisites
  * Machine Requirements:  
