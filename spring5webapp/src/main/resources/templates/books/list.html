@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- xmlns is abbreviation for xml namespace. i.e. using namespace th wherever we use th: -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BOOKS</title>
+</head>
+<body>
+<h1> Book List </h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Publisher</th>
+    </tr>
+    <!-- reference the book in the list of books added from the model-->
+    <tr th:each="book: ${books}">
+        <td th:text="${book.id}">123</td>
+        <td th:text="${book.title}">Spring in action</td>
+        <td th:text="${book.publisher.name}">wrox</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
