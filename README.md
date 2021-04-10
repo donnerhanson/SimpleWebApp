@@ -49,12 +49,16 @@ The general Model View Controller pattern is found at [MVC at Tutorialspoint.com
 
 The Spring MVC Architecture uses the following model:
 [Spring_MVC_Arch_Model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290677/Spring_MVC_Arch_Model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)
+1. Client Sends an HTTP request.
+2. Dispatcher Serverlet Sends request to Controller
+3. Controller interfaces with the Services
+4. Services performs actions on data from the requested location
+5. Service returns model to controller and returns model to the Dispatcher Servelet
+6. Serverlet sends the model to the View component
+7. View component renders the HTML (in this project thymeleaf is used).
 
-The Simple Web Application uses the following smaller model from the Spring MVC model:  
-[Simple_Web_App_model.pdf](https://github.com/donnerhanson/SimpleWebApp/files/6290686/Simple_Web_App_model.pdf) - model from ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/learn/lecture/17814928#content)
+This ensures separation of operations to ensure easier Implementation and Maintenence during the SDLC.   
 
-
-The Client Sends a request to the Front Controller, otherwise known as the Dispatcher Serverlet.
  <!-- GETTING STARTED -->
  ## Getting Started
 
