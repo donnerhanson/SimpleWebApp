@@ -74,7 +74,7 @@ On Mac OS Mojave
 
  1. Clone the repo  
  ```sh  
- git clone https://github.com/donnerhanson/SimpleWebApp
+ git clone https://github.com/donnerhanson/SimpleWebApp.git
  ```  
 
 
