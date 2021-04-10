@@ -32,35 +32,44 @@ public class bootstrapData implements CommandLineRunner {
         ddd.getAuthors().add(eric);
 
 
-        String name;
-        String addressLineOne;
-        String city;
-        String state;
-        int zip;
-
         Publisher publisher = new Publisher("Penguin", "testAddr 123432", "testCity", "Test State", 23123);
         publisherRepository.save(publisher);
+
+
+        publisher.getBooks().add(ddd);
+        ddd.setPublisher(publisher);
+
         authorRepository.save(eric);
         bookRepository.save(ddd);
 
         Author rod = new Author("Rod", "Johnson");
         Book noEjb = new Book("J2EE Development without EJB", "24344351");
-        Author test = new Author("test", "test");
+
 
         rod.getBooks().add(noEjb);
-        test.getBooks().add(noEjb);
         noEjb.getAuthors().add(rod);
-        noEjb.getAuthors().add(test);
+        noEjb.setPublisher(publisher);
 
+        noEjb.setPublisher(publisher);
+        publisher.getBooks().add(noEjb);
+
+        Author test = new Author("test", "test");
+        test.getBooks().add(noEjb);
+        noEjb.getAuthors().add(test);
+        authorRepository.save(test);
 
         authorRepository.save(rod);
-        authorRepository.save(test);
         bookRepository.save(noEjb);
+        publisherRepository.save(publisher);
+
+
+
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of books: " + bookRepository.count());
         System.out.println("Number of authors: " + authorRepository.count());
         System.out.println("Number of publishers: " + publisherRepository.count());
+        System.out.println("Publishers number of books: " + publisher.getBooks().size());
 
     }
 }

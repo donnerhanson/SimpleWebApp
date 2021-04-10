@@ -2,10 +2,10 @@ package com.springwebapp.spring5webapp.domain;
 
 import org.apache.tomcat.jni.Address;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
 public class Publisher {
@@ -17,6 +17,10 @@ public class Publisher {
     private String city;
     private String state;
     private int zip;
+
+    @OneToMany
+    @JoinColumn(name = "publisher_id")
+    private Set<Book> books = new HashSet<>();
 
     public Publisher() {
     }
@@ -84,7 +88,7 @@ public class Publisher {
 
         Publisher publisher = (Publisher) o;
 
-        return id != null ? id.equals(publisher.id) : publisher.id == null;
+        return Objects.equals(id, publisher.id);
     }
 
     @Override
@@ -102,5 +106,13 @@ public class Publisher {
                 ", state='" + state + '\'' +
                 ", zip=" + zip +
                 '}';
+    }
+
+    public Set<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 }
