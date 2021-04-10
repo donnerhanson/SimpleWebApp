@@ -42,7 +42,7 @@
  <!-- ABOUT THE PROGRAM -->
  ## About The Program
 
-This program is a simple web page (in progress) built using Spring Framework following the Udemy course "Spring Framework 5: Beginner to Guru".
+This program is a simple web page (in progress) built using Spring Framework following the Udemy course ["Spring Framework 5: Beginner to Guru"](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
 
 The program is an exercise and demonstration of the Spring MVC architecural pattern.  
 The general Model View Controller pattern is found at [MVC at Tutorialspoint.com](https://www.tutorialspoint.com/mvc_framework/mvc_framework_introduction.htm)  
